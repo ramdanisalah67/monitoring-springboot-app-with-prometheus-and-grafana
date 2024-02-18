@@ -1,0 +1,63 @@
+1926  wget https://get.helm.sh/helm-v3.7.0-linux-amd64.tar.gz
+ 1927  tar -zxvf helm-v3.7.0-linux-amd64.tar.gz
+ 1928  sudo mv linux-amd64/helm /usr/local/bin/helm
+ 1929  helm init --upgrade
+ 1930  helm
+ 1931  clear
+ 1932  helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+ 1933  helm repo update
+ 1934  clear
+ 1935  kubectl get pods
+ 1936  clear
+ 1937  kubectl get pods
+ 1938  clear
+ 1939  kubectl get pods
+ 1940  clear
+ 1941  kubectl get pods
+ 1942  clear
+ 1943  kubectl get svc
+ 1944  kubectl get pods
+ 1945  clear
+ 1946  kubectl get pods
+ 1947  kubectl get svc
+ 1948  kubectl expose service prometheus-server --type=NodePort --targetPort=9090 --name=prometheus-server-ext
+ 1949  kubectl expose service prometheus-server --type=NodePort --target-Port=9090 --name=prometheus-server-ext
+ 1950  kubectl expose service prometheus-server --type=NodePort --target-port=9090 --name=prometheus-server-ext
+ 1951  kuebctl get svc
+ 1952  kubectl get svc
+ 1953  clear
+ 1954  helm repo add grafana https://grafana.github.io/helm-charts
+ 1955  kubectl get pods
+ 1956  docker images
+ 1957  clear
+ 1958  helm repo update
+ 1959  helm install grafana grafana/grafana
+ 1960  clear
+ 1961  kubectl get pods
+ 1962  helm install grafana grafana/grafana
+ 1963  docker images
+ 1964  kubectl get pods
+ 1965  helm ls
+ 1966  kubectl get secret grafana-grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
+ 1967  kubectl get secret grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
+ 1968  clear
+ 1969  kubectl get svc
+ 1970  kubectl  expose service grafana --type=NodePort --target-port=3000 --name=grafana-ext
+ 1971  kubectl get pods
+ 1972  kubectl logs grafana-7999d76485-5m2gx
+ 1973  kubectl get pods
+ 1974  clear
+ 1975  kubectl get pods
+ 1976  clear
+ 1977  kubectl get pods
+ 1978  kubectl logs grafana-7999d76485-5m2gx
+ 1979  clear
+ 1980  kubectl get pods
+ 1981  kubectl  expose service grafana --type=NodePort --target-port=3000 --name=grafana-extkubectl get svc
+ 1982  kubectl get svc
+ 1983  clear
+ 1984  kubectl get svc
+ 1985  kubectl delete service grafana-extkubectl
+ 1986  kubectl get svc
+ 1987  kubectl get secret grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
+ 1988  kubectl get deployment
